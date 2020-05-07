@@ -2,6 +2,10 @@
 
 Netbeans plugin that wraps PlantUML to provide its functionality from within Netbeans.
 
+### Version 1.7
+
+Upgrade to NetBeans Platform 11.3
+
 ### Version 1.6
 
 This version of PlantUML-NB includes
