@@ -49,7 +49,7 @@ import java.util.logging.Logger;
 import javax.swing.AbstractAction;
 import javax.swing.Action;
 import javax.swing.JPanel;
-import org.apache.batik.dom.svg.SAXSVGDocumentFactory;
+import org.apache.batik.anim.dom.SAXSVGDocumentFactory;
 import org.apache.batik.swing.gvt.GVTTreeRendererEvent;
 import org.apache.batik.swing.gvt.GVTTreeRendererListener;
 import org.apache.batik.util.XMLResourceDescriptor;

@@ -12,7 +12,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <netbeans.run.params.ide>  </netbeans.run.params.ide>
-        <netbeans.platform.version>RELEASE81</netbeans.platform.version>
+        <netbeans.platform.version>RELEASE113</netbeans.platform.version>
         <netbeans.run.params>${netbeans.run.params.ide}</netbeans.run.params>        
     </properties>
 
@@ -53,7 +53,7 @@
         <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-openide-filesystems</artifactId>
-            <version>RELEASE802</version>
+            <version>${netbeans.platform.version}</version>
             <type>nbm</type>
         </dependency>
         <dependency>
@@ -161,22 +161,14 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>batik</groupId>
-            <artifactId>batik-swing</artifactId>
-            <version>1.6-1</version>
-            <type>jar</type>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-libs-batik-read</artifactId>
+            <version>${netbeans.platform.version}</version>
         </dependency>
         <dependency>
-            <groupId>batik</groupId>
-            <artifactId>batik-script</artifactId>
-            <version>1.6-1</version>
-            <!-- exclude xerces as Netbeans includes it -->
-            <exclusions>
-                <exclusion>
-                    <groupId>xerces</groupId>
-                    <artifactId>xercesImpl</artifactId>
-                </exclusion>
-            </exclusions>
+            <groupId>org.apache.xmlgraphics</groupId>
+            <artifactId>batik-swing</artifactId>
+            <version>1.12</version>
         </dependency>
         <!-- include xerces in test scope as unittests need it -->
         <dependency>
@@ -206,8 +198,13 @@
         <dependency>
             <groupId>org.netbeans.api</groupId>
             <artifactId>org-netbeans-modules-projectuiapi</artifactId>
-            <version>RELEASE802</version>
+            <version>${netbeans.platform.version}</version>
             <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.netbeans.api</groupId>
+            <artifactId>org-netbeans-modules-projectuiapi-base</artifactId>
+            <version>${netbeans.platform.version}</version>
         </dependency>
         <dependency>
             <groupId>org.netbeans.api</groupId>
@@ -233,21 +230,24 @@
         </dependency>
         <dependency>
             <groupId>org.netbeans.api</groupId>
-            <artifactId>org-netbeans-modules-projectuiapi-base</artifactId>
+            <artifactId>org-netbeans-modules-java-project</artifactId>
             <version>${netbeans.platform.version}</version>
             <type>nbm</type>
         </dependency>
         <dependency>
             <groupId>org.netbeans.api</groupId>
-            <artifactId>org-netbeans-modules-java-project</artifactId>
-            <version>RELEASE802</version>
-            <type>nbm</type>
+            <artifactId>org-netbeans-modules-java-project-ui</artifactId>
+            <version>${netbeans.platform.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.16.16</version>
-            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>xml-apis</groupId>
+            <artifactId>xml-apis</artifactId>
+            <version>1.4.01</version>
         </dependency>
     </dependencies>
 
