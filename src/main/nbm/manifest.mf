@@ -3,41 +3,76 @@ OpenIDE-Module-Localizing-Bundle: org/netbeans/modules/plantumlnb/ui/Bundle.prop
 OpenIDE-Module-Layer: org/netbeans/modules/plantumlnb/layer.xml
 OpenIDE-Module-Requires: org.openide.windows.WindowManager
 OpenIDE-Module-Short-Description: PlantUML functionality inside Netbeans.
-OpenIDE-Module-Long-Description: Create and edit UML files using 
- Plant UML within the IDE. <br>
- <strong>Author:</strong> Venkat Ram Akkineni <br>
- <strong>Website:</strong> https://sourceforge.net/projects/plantumlnb/ <br><br>
- <strong>Help </strong> <br>
+OpenIDE-Module-Long-Description: <html>
+  <p>Create and edit UML files using Plant UML within the IDE.</p>
+  <table>
+    <tr><td><strong>Author:</strong></td><td>Venkat Ram Akkineni</td></tr>
+    <tr><td><strong>Website:</strong></td><td>https://sourceforge.net/projects/plantumlnb/</td></tr>
+  </table>
+  <h3>Help</h3>
+  <ul>
+    <li>Zoom (<kbd>Ctrl</kbd> + <kbd>Left Click</kbd>)</li>
+    <li>Realize zoom (<kbd>Shift<kbd> + <kbd>Right Click</kbd>)</li>
+    <li>Pan (<kbd>Shift</kbd> + <kbd>Left Click</kbd>)</li>
+    <li>Rotate (<kbd>Ctrl</kbd> + <kbd>Right Click</kbd>)</li>
+    <li>Reset (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Right Click</kbd>)</li>
+  </ul>
+  <!-- 1.7 -->
+  <h3>Version 1.7</h3>
+  <ul>
+    <li>Upgraded NetBeans Platform to 11.3.</li>
+    <li>Upgraded PlantUML to 1.2018.7.</li>
+  </ul>
+  <!-- 1.6 -->
+  <h3>Version 1.6</h3>
+  <h4>This version of PlantUML-NB includes</h4>
+  <ul>
+    <li>latest version (1.4.0) of PlantUML-dependency.</li>
+    <li>latest version of PlantUML (2017.11).</li>
+    <li>a new wizard to create PlantUML from existing java sources.</li>
+    <li>a new encoding drop down in options panel.</li>
+  </ul>
+  <!-- 1.5 -->
+  <h3>Version 1.5</h3>
+  <ul>
+    <li>Upgraded plantuml to 8015 from 7985.</li>
+  </ul>
+  <!-- 1.4 -->
+  <h3>Version 1.4</h3>
+  <p>Most of the changes being released this time were contributed by <a href=
+    "http://netbeans.dzone.com/meet-netbeans-contributor-benno-markiewicz">Benno Markiewicz</a>.
+    So, many thanks to him.</p>
+  <h4>What's new</h4>
+  <ul>
+    <li>You can now select the UML preview window and Ctrl-C to copy the image to clipboard.</li>
+    <li>Export image action is now available as a context menu on the file.</li>
+    <li>Options window has been added that now allows specification of a dot.exe file.</li>
+    <li>Charset has been hardcoded to UTF-8 for now.</li>
+  </ul>
+  <!-- 1.3 -->
+  <h3>Version 1.3</h3>
+  <h4>What's new</h4>
+  <ul>
+    <li>Fixed mouse event handlers. You can now use mouse and keyboard combination to perform zoo
+        / rotate / pan.</li>
+    <li>Improved Lexer grammer.</li>
+    <li>Added a help hover button below to show the keyboard shortcuts.</li>
+    <li>Added code template support..</li>
+    <li>Showing document name on Preview panel titlebar.</li>
+    <li>Upgraded plantuml version to 7985.</li>
+    <li>Add support for PlantUML Dependency. Users can now create plantuml files from existing java
+      files. Go to New File &gt;</li>
+  </ul>
+  <h4>Known Issues</h4>
+  <ul>
+    <li>Scrollbar on the canvas is not working properly.
     <ul>
-        <li>Zoom ( Ctrl + Left Click ) </li> 
-        <li>Realize zoom ( Shift + Right Click  ) </li> 
-        <li>Pan ( SHIFT + Left Click ) </li> 
-        <li>Rotate ( CTRL + Right Click ) </li> 
-        <li>Reset ( CTRL + SHIFT + Right Click ) </li> 
+      <li><strong>WorkAround:</strong> Use pan in the mean time.</li>
     </ul>
-  <h3>Version 1.3</h3>   
-  <p><strong>What's new</strong></p>
-    <ul>
-        <li>Fixed mouse event handlers. You can now use mouse and keyboard combination to perform zoo / rotate / pan.</li>  
-        <li>Improved Lexer grammer.</li>
-        <li>Added a help hover button below to show the keyboard shortcuts.</li>
-        <li>Added code template support..</li>
-        <li>Showing document name on Preview panel titlebar.</li>
-        <li>Upgraded plantuml version to 7985.</li>
-        <li>Add support for PlantUML Dependency. Users can now create plantuml files from existing java files. Go to New File ></li>
-    </ul>
-  
-  <p><strong>Known Issues</strong></p>
-    <ul>
-      <li>Scrollbar on the canvas is not working properly.
-      <ul>
-        <li><strong>WorkAround:</strong> Use pan in the mean time.</li>
-      </ul>
-    </ul>  
-  
-  <p><strong>NOTE</strong></p>
-    <ul>
-      <li>I have not researched into all possible code templates. If you, as a plantuml user, find code snippets that could be included inside the plugin, please share these with me via a sourceforge issue, so that everybody can benefit from your contribution.  </li>
-    </ul>
-    
+  </ul>
+  <h4>NOTE</h4>
+  <p>I have not researched into all possible code templates. If you, as a plantuml user, find code
+  snippets that could be included inside the plugin, please share these with me via a sourceforge
+  issue, so that everybody can benefit from your contribution.</p>
+  </html>
 OpenIDE-Module-Specification-Version: 1.7
