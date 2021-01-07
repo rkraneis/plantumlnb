@@ -5,7 +5,7 @@ Netbeans plugin that wraps PlantUML to provide its functionality from within Net
 ### Version 1.7
 
 * Upgraded NetBeans Platform to 11.3
-* Upgraded PlantUML to 1.2020.10
+* Upgraded PlantUML to 1.2020.11
 
 ### Version 1.6
 

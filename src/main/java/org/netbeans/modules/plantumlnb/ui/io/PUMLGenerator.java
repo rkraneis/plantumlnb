@@ -42,7 +42,9 @@ import static org.netbeans.modules.plantumlnb.ui.options.PlantUMLPanel.DEFAULT_U
 import static org.netbeans.modules.plantumlnb.ui.options.PlantUMLPanel.DOT_MANUAL_MODE_DOT_PATH;
 import static org.netbeans.modules.plantumlnb.ui.options.PlantUMLPanel.PLANTUML_ENCODING;
 
+import java.util.List;
 import net.sourceforge.plantuml.core.DiagramDescription;
+import net.sourceforge.plantuml.security.SFile;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 import org.openide.util.NbPreferences;
@@ -85,12 +87,14 @@ public class PUMLGenerator {
              * Replace this to use user specified charset in the future.
              */
 //            SourceStringReader reader = new SourceStringReader(inputFile.asText(), FileUtil.toFile(inputFile).getParentFile());
+					  Defines defines = Defines.createEmpty();
+					  String source = inputFile.asText();
             String charset = NbPreferences.forModule(PlantUMLPanel.class).get(PLANTUML_ENCODING, DEFAULT_UTF8_ENCODING);
-            SourceStringReader reader = new SourceStringReader(Defines.createEmpty(),
-                    inputFile.asText(),
-                    charset,
-                    Collections.<String>emptyList(),
-                    FileUtil.toFile(inputFile).getParentFile());
+					  List<String> config = Collections.<String>emptyList();
+						SFile newCurrentDir = SFile.fromFile(FileUtil.toFile(inputFile).getParentFile());
+            SourceStringReader reader = new SourceStringReader(defines, source,
+                    charset, config,
+                    newCurrentDir);
             // Write the first image to "os"
             DiagramDescription desc = reader.outputImage(os, new FileFormatOption(fileFormat));
             return new String(os.toByteArray());

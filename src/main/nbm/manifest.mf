@@ -21,7 +21,7 @@ OpenIDE-Module-Long-Description: <html>
   <h3>Version 1.7</h3>
   <ul>
     <li>Upgraded NetBeans Platform to 11.3.</li>
-    <li>Upgraded PlantUML to 1.2020.10.</li>
+    <li>Upgraded PlantUML to 1.2020.11.</li>
   </ul>
   <!-- 1.6 -->
   <h3>Version 1.6</h3>
