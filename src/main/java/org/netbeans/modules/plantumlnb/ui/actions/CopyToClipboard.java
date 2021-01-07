@@ -1,4 +1,4 @@
-/* 
+/*
  * The MIT License
  *
  * Copyright 2013 Venkat Ram Akkineni.
@@ -36,8 +36,8 @@ import java.io.OutputStream;
 import javax.imageio.ImageIO;
 import net.sourceforge.plantuml.FileFormat;
 import net.sourceforge.plantuml.FileFormatOption;
+import net.sourceforge.plantuml.ImageSelection;
 import net.sourceforge.plantuml.SourceStringReader;
-import net.sourceforge.plantuml.swing.ImageSelectionAccessor;
 import org.netbeans.modules.plantumlnb.pumlDataObject;
 import org.netbeans.modules.plantumlnb.ui.pumlVisualElement;
 import org.openide.awt.ActionID;
@@ -89,7 +89,7 @@ public final class CopyToClipboard implements ActionListener {
                 closeStream(os);
             }
             if (null != image) {
-                clipboard.setContents(ImageSelectionAccessor.createImageSelection(image), null);
+                clipboard.setContents(new ImageSelection(image), null);
             }
         }
 

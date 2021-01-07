@@ -4,8 +4,8 @@ Netbeans plugin that wraps PlantUML to provide its functionality from within Net
 
 ### Version 1.7
 
-Upgrade to NetBeans Platform 11.3
-Upgrade to PlantUML 2018.6
+* Upgraded NetBeans Platform to 11.3
+* Upgraded PlantUML to 2018.7
 
 ### Version 1.6
 
@@ -13,7 +13,7 @@ This version of PlantUML-NB includes
 
     * latest version (1.4.0) of PlantUML-dependency.
     * latest version of PlantUML (2017.11).
-    * a new wizard to create PlantUML from existing java sources. 
+    * a new wizard to create PlantUML from existing java sources.
     * a new encoding drop down in options panel.
 
 ### Version 1.5
@@ -22,16 +22,16 @@ This version of PlantUML-NB includes
 
 ### Version 1.4
 
-Most of the changes being released this time were contributed by Benno Markiewicz.So, many thanks to him. 
+Most of the changes being released this time were contributed by Benno Markiewicz.So, many thanks to him.
 ( http://netbeans.dzone.com/meet-netbeans-contributor-benno-markiewicz )
 
     ### What's new
 
         * You can now select the UML preview window and Ctrl-C to copy the image to clipboard.
-        * Export image action is now available as a context menu on the file. 
+        * Export image action is now available as a context menu on the file.
         * Options window has been added that now allows specification of a dot.exe file.
-        * Charset has been hardcoded to UTF-8 for now.     
-    
+        * Charset has been hardcoded to UTF-8 for now.
+
 
 ### Version 1.3
 
@@ -63,15 +63,15 @@ Most of the changes being released this time were contributed by Benno Markiewic
         - Zoom ( Ctrl + Left Click )
         - Realize zoom ( Shift + Right Click  )
         - Pan ( SHIFT + Left Click )
-        - Rotate ( CTRL + Right Click ) 
+        - Rotate ( CTRL + Right Click )
         - Reset ( CTRL + SHIFT + Right Click )
     * Added toolbar buttons for zoom-in, zoom-out, reset, rotate.
     * Added open in browser toolbar button.
 
 ### Version 1.1.0
 
-Added saveas button, dialog. 
-    * Save as png 
+Added saveas button, dialog.
+    * Save as png
     * Save as svg
     * Save as eps
 
@@ -79,4 +79,4 @@ Added saveas button, dialog.
 
     * create a PUML file
     * Save a PUML file
-    * Syntax Highlighting for Keywords, connectors, types, parts identifiers 
+    * Syntax Highlighting for Keywords, connectors, types, parts identifiers

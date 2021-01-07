@@ -1,4 +1,4 @@
-/* 
+/*
  * The MIT License
  *
  * Copyright 2013 Venkat Ram Akkineni.
@@ -37,9 +37,12 @@ import net.sourceforge.plantuml.SourceStringReader;
 import net.sourceforge.plantuml.preproc.Defines;
 import org.netbeans.modules.plantumlnb.PrettyPrinter;
 import org.netbeans.modules.plantumlnb.ui.options.PlantUMLPanel;
+
 import static org.netbeans.modules.plantumlnb.ui.options.PlantUMLPanel.DEFAULT_UTF8_ENCODING;
 import static org.netbeans.modules.plantumlnb.ui.options.PlantUMLPanel.DOT_MANUAL_MODE_DOT_PATH;
 import static org.netbeans.modules.plantumlnb.ui.options.PlantUMLPanel.PLANTUML_ENCODING;
+
+import net.sourceforge.plantuml.core.DiagramDescription;
 import org.openide.filesystems.FileObject;
 import org.openide.filesystems.FileUtil;
 import org.openide.util.NbPreferences;
@@ -83,13 +86,13 @@ public class PUMLGenerator {
              */
 //            SourceStringReader reader = new SourceStringReader(inputFile.asText(), FileUtil.toFile(inputFile).getParentFile());
             String charset = NbPreferences.forModule(PlantUMLPanel.class).get(PLANTUML_ENCODING, DEFAULT_UTF8_ENCODING);
-            SourceStringReader reader = new SourceStringReader(new Defines(), 
-                    inputFile.asText(), 
-                    charset, 
-                    Collections.<String>emptyList(), 
+            SourceStringReader reader = new SourceStringReader(Defines.createEmpty(),
+                    inputFile.asText(),
+                    charset,
+                    Collections.<String>emptyList(),
                     FileUtil.toFile(inputFile).getParentFile());
             // Write the first image to "os"
-            String desc = reader.generateImage(os, new FileFormatOption(fileFormat));
+            DiagramDescription desc = reader.outputImage(os, new FileFormatOption(fileFormat));
             return new String(os.toByteArray());
         } catch (IOException ex) {
             logger.log(Level.WARNING, ex.getMessage());
